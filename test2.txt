@@ -1,0 +1,5 @@
+ @RequestMapping("/save")
+    public String  save(Item item){
+        itemServie.save(item);
+        return "redirect:/items/findAll";
+    }
